@@ -1,0 +1,108 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #FAF7F2;
+    margin: 50px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.rigth {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px
+}
+
+.inp1,
+.inp2 {
+    background-color: rgb(192, 224, 244);
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.inp1 {
+    width: 290px;
+
+}
+
+.inp2 {
+    width: 340px
+}
+
+.inputs button {
+    width: 50px;
+    height: 40px;
+    background-color: rgb(86, 193, 86);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.selectors {
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.selectors select {
+    background-color: #F0D1A8;
+    border: none;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    color: rgb(88, 32, 32)
+}
+
+.beige-div {
+    display: flex;
+    align-items: center;
+    background-color: #F0D1A8;
+    width: 350px;
+    color: rgb(88, 32, 32);
+    padding:10px;
+    border-radius:10px;
+    height: 140px;
+}
+
+.beige-div h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.svgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.beige-div p{
+    font-size: 15px;
+}
+
+.svgs svg{
+    fill:rgb(88, 32, 32);
+    width:30px;
+    height: 30px;
+}
+
+.beige-divs{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:20px
+}

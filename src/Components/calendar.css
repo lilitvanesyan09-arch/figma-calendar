@@ -1,0 +1,23 @@
+.calendar-grid{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+.month-calendar{
+   align-items: center;
+   text-align: center;
+}
+
+.cal{
+background-color:white
+}
+
+.calendar-grid h3, h1, .year{
+    color:white
+}
+
+.calendar-button{
+    width:150px;
+    height: 30px;
+    border-radius: 5px;
+}
