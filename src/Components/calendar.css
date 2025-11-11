@@ -1,4 +1,4 @@
-.calendar-grid{
+/* .calendar-grid{
     display:grid;
     grid-template-columns: repeat(3,auto);
 }
@@ -20,4 +20,61 @@ background-color:white
     width:150px;
     height: 30px;
     border-radius: 5px;
+} */
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.month-calendar {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.react-calendar__tile {
+  color: white;
+  background: transparent;
+}
+
+/* Highlight weekends (Saturday, Sunday) */
+.weekend {
+  background-color: #2a2a2a !important;
+  color: #ff7675 !important;
+  border-radius: 6px;
+}
+
+/* Highlight today */
+.today {
+  background-color: #0984e3 !important;
+  color: white !important;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Highlight selected day */
+.selected-day {
+  background-color: #00b894 !important;
+  color: white !important;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Calendar buttons */
+.calendar-button {
+  background-color: #00b894;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-button:hover {
+  background-color: #019875;
 }
