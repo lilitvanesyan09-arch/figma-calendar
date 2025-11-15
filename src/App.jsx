@@ -19,6 +19,21 @@ console.log(formatted);
 
   return (
     <>
+    <div className="calendar-wrapper">
+      <h1 className="title">
+        {value.toLocaleDateString("en-US", {
+          day: "2-digit",
+          month: "long",
+          year: "numeric"
+        })}
+      </h1>
+
+      <Calendar
+        onChange={setValue}
+        value={value}
+        calendarType="iso8601" // Monday as first day
+      />
+    </div>
       <Calendar1></Calendar1>
       <MyCalendar></MyCalendar>
     </>
