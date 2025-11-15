@@ -1,6 +1,7 @@
 import "./style.css"
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import { useState } from "react";
 
 export function Calendar1() {
     const today = new Date()
@@ -12,18 +13,29 @@ export function Calendar1() {
         month: 'long',
         year: 'numeric'
     });
-    console.log(formatted);
-    
-
-    console.log(dayOfWeek);
+    const [value, setValue] = useState(new Date())
     return (
         <div>
             <h1>Hello, Aqeel , Start planning today</h1>
             <div className="all">
-                <div>
-                    <h2 className="week-day">{dayOfWeek}</h2>
-                    <h1>{formatted}</h1>
+                <div className="left">
+                    <h1 className="week-day">{dayOfWeek}</h1>
 
+                <div className="calendar-wrapper">
+                    <h1 className="title">
+                        {value.toLocaleDateString("en-US", {
+                            day: "2-digit",
+                            month: "long",
+                            year: "numeric"
+                        })}
+                    </h1>
+
+                    <Calendar
+                        onChange={setValue}
+                        value={value}
+                        calendarType="iso8601" // Monday as first day
+                    />
+                </div>
                 </div>
 
                 <div className="rigth">
