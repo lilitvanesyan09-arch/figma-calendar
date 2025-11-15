@@ -7,6 +7,15 @@ import MyCalendar from './Components/calendar'
 
 function App() {
   const [count, setCount] = useState(0)
+  const today=new Date()
+  const formatted = today.toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric'
+});
+
+console.log(formatted);
+  
 
   return (
     <>

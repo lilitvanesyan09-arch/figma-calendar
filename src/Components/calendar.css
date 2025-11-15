@@ -22,3 +22,8 @@ background-color:white
     border-radius: 5px;
 }
 
+.week-day{
+    color:#F87777;
+    font-family:'Times New Roman', Times, serif
+    /* font-family:Georgia, 'Times New Roman', Times, serif */
+}
